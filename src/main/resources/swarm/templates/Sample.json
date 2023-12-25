@@ -1,0 +1,79 @@
+{
+  "chainName": "SampleJobComb",
+  "jobs": [
+    {
+      "id": 0,
+      "name": "A"
+    },
+    {
+      "id": 1,
+      "name": "B",
+      "parallelJobs": [
+        {
+          "name": "B-Sub1"
+        },
+        {
+          "name": "B-Sub2"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "C"
+    },
+    {
+      "id": 3,
+      "name": "D"
+    },
+    {
+      "id": 4,
+      "name": "E"
+    },
+    {
+      "id": 5,
+      "name": "F"
+    },
+    {
+      "id": 6,
+      "name": "G"
+    }
+  ],
+  "edges": [
+    {
+      "fromId": 0,
+      "toId": 1
+    },
+    {
+      "fromId": 0,
+      "toId": 2
+    },
+    {
+      "fromId": 1,
+      "toId": 2
+    },
+    {
+      "fromId": 3,
+      "toId": 2
+    },
+    {
+      "fromId": 4,
+      "toId": 2
+    },
+    {
+      "fromId": 1,
+      "toId": 5
+    },
+    {
+      "fromId": 2,
+      "toId": 5
+    },
+    {
+      "fromId": 4,
+      "toId": 5
+    },
+    {
+      "fromId": 5,
+      "toId": 6
+    }
+  ]
+}
